@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Category } from '../../../../core/models/category.model';
 import { ProductListComponent } from '../product-list/product-list.component';
 
@@ -11,4 +11,9 @@ import { ProductListComponent } from '../product-list/product-list.component';
 })
 export class CategoryListComponent {
   categories = input.required<Category[]>();
+  remove = output<string>();
+
+  onRemove(name: string): void {
+    this.remove.emit(name);
+  }
 }

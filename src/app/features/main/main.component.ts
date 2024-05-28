@@ -1,5 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
-import { MenuService } from './services/menu.service';
+import { CategoryService } from './services/category.service';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 
 @Component({
@@ -10,13 +10,21 @@ import { CategoryListComponent } from './components/category-list/category-list.
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
-  service = inject(MenuService);
+  service = inject(CategoryService);
   
   categories = computed(() => this.service.state().data);
   isLoading = computed(() => this.service.state().loading);
   error = computed(() => this.service.state().error);
 
   ngOnInit() {
-    this.service.loadMenu();
+    this.service.loadData();
+  }
+
+  onRemove(name: string) {
+    this.service.removeItem(name);
+  }
+
+  onAdd() {
+    this.service.addItem();
   }
 }

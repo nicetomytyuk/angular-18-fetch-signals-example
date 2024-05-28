@@ -1,7 +1,8 @@
 @if (isLoading()) {
 Loading...
 }@else {
-    <app-category-list [categories]="categories()"></app-category-list>
+    <app-category-list [categories]="categories()" (remove)="onRemove($event)"></app-category-list>
+    <button (click)="onAdd()">Add Item</button>
 }
 
 @if (error()) {
