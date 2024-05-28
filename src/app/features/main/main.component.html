@@ -1,0 +1,9 @@
+@if (isLoading()) {
+Loading...
+}@else {
+    <app-category-list [categories]="categories()"></app-category-list>
+}
+
+@if (error()) {
+<span style="color: red;">{{ error() }}</span>
+}

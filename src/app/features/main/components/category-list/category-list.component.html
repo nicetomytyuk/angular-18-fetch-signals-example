@@ -1,0 +1,10 @@
+<ul>
+    @for(category of categories(); track $index) {
+    <li>
+        <span>{{category.name}}</span>
+        <app-product-list [products]="category.products"></app-product-list>
+    </li>
+    }@empty {
+        <span>Nessuna categoria è stata trovata!</span>
+    }
+</ul>

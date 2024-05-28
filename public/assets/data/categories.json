@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Combo Meal",
+        "image": "https://s7d1.scene7.com/is/image/mcdonalds/mcdonalds-Double-Cheeseburger:1-3-product-tile-desktop?wid=829&hei=515&dpr=off"
+    },
+    {
+        "name": "Burgers & Sandwiches",
+        "image": "https://www.allrecipes.com/thmb/7SzJU7I3KbdSbnwkD3j0aIizevs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/McDonalds-Chicken-Big-Mac-2x1-1-13ed06033ccf49dcb01a91168fe1e7bc.png"
+    },
+    {
+        "name": "Happy Meal",
+        "image": "https://media.npr.org/assets/img/2013/09/26/ap110725132481-64efa1b0559d2ba8f38c7f6aaa9b96221806903b-s1100-c50.jpg"
+    },
+    {
+        "name": "Category 4",
+        "image": "https://loghi-famosi.com/wp-content/uploads/2020/04/McDonalds-Logo.png"
+    },
+    {
+        "name": "Category 5",
+        "image": "https://loghi-famosi.com/wp-content/uploads/2020/04/McDonalds-Logo.png"
+    },
+    {
+        "name": "Category 6",
+        "image": "https://loghi-famosi.com/wp-content/uploads/2020/04/McDonalds-Logo.png"
+    }
+]
