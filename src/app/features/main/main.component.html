@@ -1,10 +1,10 @@
-@if (isLoading()) {
-Loading...
-}@else {
-    <app-category-list [categories]="categories()" (remove)="onRemove($event)"></app-category-list>
-    <button (click)="onAdd()">Add Item</button>
-}
-
 @if (error()) {
 <span style="color: red;">{{ error() }}</span>
+}@else {
+    @if (isLoading()) {
+        Loading...
+    }@else {
+        <app-category-list [categories]="categories()" (remove)="onRemove($event)"></app-category-list>
+        <button (click)="onAdd()">Add Item</button>
+    }
 }
